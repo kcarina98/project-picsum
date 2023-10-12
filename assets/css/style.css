@@ -35,8 +35,8 @@ h1 span {
 }
 
 .images div img {
-  height: 300px;
-  width: 500px;
+  height: 70%;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
   transition: 0.5s;
@@ -64,4 +64,18 @@ h1 span {
 .images div button:hover {
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ! Media Querries */
+
+@media only screen and (max-width: 768px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
